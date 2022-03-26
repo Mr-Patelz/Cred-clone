@@ -3,7 +3,7 @@
   This is a clone for CRED startup india.
   
    # Usage
-      npm i to install project dependencies of package.json file
+      npm i -- to install project dependencies of package.json file
     
 
 ## Built with

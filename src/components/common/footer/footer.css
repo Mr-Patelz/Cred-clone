@@ -1,0 +1,133 @@
+/* 
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    margin: 30px 0px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    opacity: 0.4;
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    letter-spacing: 0.75px;
+    opacity: 0.7;
+    padding: 0px;
+    color: #fff;
+    z-index: 20;
+    font-size: 18px;
+    line-height: 34px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  /* @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+      font-size: 12px;
+      margin: 30px 0px;
+    }
+
+    .flex-item-left{
+      margin: 30px 0px;
+    }
+  } */ 
+*{
+  box-sizing: border-box;
+}
+
+.flex-container{
+  font-family: gilroy-regular;
+  font-variant-ligatures: none;
+  margin: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: env(safe-area-inset-top);
+  overflow-x: hidden;
+  z-index: 20;
+  display: grid;
+  row-gap: 70px;
+  grid-template-columns: 1fr 1fr;
+  }
+
+  .flex-item-left{
+    align-self: baseline;
+  }
+
+  .content{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    opacity: 0.4;
+  }
+
+.flex-item-right{
+   align-self: baseline;
+  }
+
+.biGYe {
+    word-break: break-word;
+}
+
+.irffNS {
+  font-family: gilroy-regular;
+  font-size: 18px;
+  letter-spacing: 0.75px;
+  line-height: 34px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  opacity: 0.7;
+  padding: 0px 15px;
+  border-right: 1px solid rgb(246, 246, 246);
+}
+a {
+  text-decoration: none;
+  outline: 0px;
+}
+
+.irffNS:first-child {
+  padding: 0px 15px 0px 0px;
+}
+.irffNS:last-child {
+  border-right: none;
+}
+@media screen and (max-width: 1279px){
+   .content {
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    -webkit-box-pack: unset;
+    justify-content: unset;
+   }
+
+  .irffNS {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 23px;
+}
+}
+
+@media screen and (max-width: 767px){
+.flex-container {
+    padding: 70px 30px;
+    display: block;
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1279px){
+.flex-container {
+    padding: 100px 60px;
+}}

@@ -11,7 +11,6 @@
   - HTML5
   - CSS3
   - React
-  - css
   - JavaScript
 
 ## Links
